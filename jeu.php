@@ -10,13 +10,27 @@
   </head>
 
   <body>
+<?php
+  session_start();
+  $pseudo=$_SESSION['pseudo'];
+  $difficulty=$_SESSION['difficulty'];
+  
+?>
+
+<input type=hidden id=variableAPasser value=<?php echo($difficulty); ?>/>
+
+<script>
+  var difficulty = '<?php echo $difficulty; ?>';
+  console.log("NOMBRE DE COUPS".difficulty);
+  setDifficulty(difficulty);
+</script>
+
 
 
   <?php
   
-  session_start();
-  $pseudo=$_SESSION['pseudo'];
-
+  
+  
 
   
 if(empty($pseudo)){
@@ -261,6 +275,7 @@ while ($row = mysqli_fetch_assoc($result)) {
           <button class="difficulty nivFacile" id="nivFacile" onclick="setDifficulty(12)">Facile</button>
           <button class="difficulty nivMoyen" id="nivMoyen" onclick="setDifficulty(10)">Moyen</button>
           <button class="difficulty nivDifficile" id="nivDifficile" onclick="setDifficulty(8)">Difficile</button>
+          
         </div>
         
         <div class="indications">

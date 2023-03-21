@@ -55,6 +55,33 @@ html{
     padding:15px;
 }
 
+
+.selecDiffi {
+    text-align: center;
+    background-color: #78a5ee;  
+    border-bottom: 5px solid #3079ef;
+    width: 10vw;
+}
+.selecDiffi:hover{
+    background-color: #105bd3;
+    border-bottom: 5px solid #083b8e;
+}
+ .selecDiffi:focus{
+    outline: none;
+    padding:15px;
+}
+
+
+
+.formulairePseudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 .submit{
     border-radius:5px;
     padding:10px;

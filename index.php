@@ -22,6 +22,13 @@
             Bienvenu.e.s dans le jeu !
             <form action="chargement.php" class="formulairePseudo" method="post">
                 <input type="text" name="pseudo" id="pseudo" class="pseudo name field-in font" placeholder="Ton pseudo :"/>
+
+                <select name="selecDiffi" id="difficulte" class="pseudo selecDiffi field-in font">
+                  <option value="facile">Facile</option>
+                  <option value="moyen">Moyen</option>
+                  <option value="difficile">Difficile</option>
+                </select>
+
                 <button class="submit font" href="#">Envoyer</button>
             </form>
         </div>  
